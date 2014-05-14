@@ -5,6 +5,7 @@ conditional = require("gulp-if")
 rename = require("gulp-rename")
 browserify = require("gulp-browserify")
 uglify = require("gulp-uglify")
+coffeeify = require("coffeeify")
 
 shim =
   jquery:
@@ -15,6 +16,7 @@ gulp.task "coffee", ->
   gulp.src(config.src + "coffee/main.coffee", { read: false })
     .pipe(browserify(
       debug: config.debug
+      transform: [coffeeify]
       extensions: [".coffee"]
       shim: shim
     ))
