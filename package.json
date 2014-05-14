@@ -4,10 +4,12 @@
     "coffeeify": "^0.6.0",
     "gulp": "^3.6.2",
     "gulp-browserify": "^0.5.0",
+    "gulp-connect": "^2.0.5",
     "gulp-if": "^1.2.0",
     "gulp-jade": "^0.5.0",
     "gulp-less": "^1.2.3",
     "gulp-rename": "^1.2.0",
-    "gulp-uglify": "^0.3.0"
+    "gulp-uglify": "^0.3.0",
+    "yargs": "^1.2.1"
   }
 }

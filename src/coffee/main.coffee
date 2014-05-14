@@ -1,3 +1,9 @@
-msg = require("./test")
+$ = require("jquery")
+Greeter = require("./Greeter")
 
-console.log(msg)
+g = new Greeter()
+g.greet()
+
+$(->
+  $("body").css("background-color", "black")
+)
