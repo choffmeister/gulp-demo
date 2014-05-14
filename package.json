@@ -1,4 +1,7 @@
 {
+  "browserify": {
+    "transform": ["coffeeify"]
+  },
   "devDependencies": {
     "coffee-script": "^1.7.1",
     "coffeeify": "^0.6.0",

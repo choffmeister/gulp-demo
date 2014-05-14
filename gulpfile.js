@@ -1,3 +1,3 @@
-// just us gulpfile.coffee
+// redirect to project folder
 require('coffee-script/register');
-require('./gulpfile.coffee');
+require('./project');
