@@ -8,5 +8,5 @@ tasks = fs.readdirSync("./project/tasks").filter((file) -> /\.(js|coffee)$/i.tes
 # include all tasks
 tasks.forEach((task) -> require("./tasks/" + task))
 
-gulp.task "build", ["coffee", "less", "jade"]
+gulp.task "build", ["coffee", "less", "jade", "vendor"]
 gulp.task "default", ["build", "connect", "watch"]
